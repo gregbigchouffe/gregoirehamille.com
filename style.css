@@ -1,0 +1,331 @@
+/* Reset default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    background-color: #111111;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    color: #FFFF00;
+}
+
+/* Navigation Bar */
+.main-nav {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+.main-nav__container {
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 15px;
+}
+
+.main-nav__list {
+    list-style-type: none;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 80px 16px; /* Column gap and row gap */
+    justify-content: center; /* Center items horizontally within each column */
+    align-content: stretch; /* Center items vertically within each row */
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__left, .main-nav__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-nav__item {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.main-nav__link {
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff; /* White text color */
+}
+
+.main-nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-nav__separator {
+    position: static;
+    width: 10%;
+    height: 0px;
+    background-color: rgba(239, 249, 252, 0.1);
+    margin: 20px;
+}
+
+.main-nav__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav__brand a {
+    font-size: 24px;
+}
+
+.main-nav__right #contactMeButton {
+    color:#111111 !important;
+    padding: 0px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*background-color: #FFFF00;  Orange color */
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contactMeButton:hover {
+    background-color: #cccc00;
+}
+
+/* Presentation Section */
+.presentation {
+    display: flex;
+    min-height: 90vh;
+    max-height: 120vh;
+}
+
+.presentation__left-content,
+.presentation__right-content {
+    flex: 1;
+    padding: 100px;
+}
+
+.presentation__left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.presentation__left-content p {
+    max-width: 100%;
+    line-height: 2;
+}
+
+.presentation__left-content h1 {
+    padding-top: 80px;
+    line-height: 1.2;
+}
+
+/* Call-to-action Container */
+.presentation__cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.presentation__cta-button {
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FFFF00; /* Orange color */
+    color: #111111; /* White text color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.presentation__cta-button:hover {
+    background-color: #cccc00; /* Darker shade of orange on hover */
+}
+
+.presentation__round-button-text {
+    display: flex;
+    margin-right: -70px;
+    width: 140px;
+    height: 140px;
+    justify-content: flex-end;
+    font-size: 11px;
+    border-radius: 100%; /* Makes the button circular */
+    border: 1px solid rgba(239, 249, 252, 0.1); /* Sets the border thickness and color */
+    background-color: #111111; /* Ensures button background is transparent */
+    color: #ffffff; /* Sets the text color */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center; /* Centers the text horizontally */
+    cursor: pointer; /* Shows pointer cursor on hover */
+    z-index: 100;
+}
+
+.presentation__right-content {
+    position: relative;
+    background-image: url("media/myPicture1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation__right-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* About me Section */
+.about-me {
+    padding: 150px 20%;
+    text-align: center;
+}
+
+.about-me p {
+    display: block;
+    margin-bottom: 0; /* Adjust the margin as needed */
+    line-height: 1.4;
+}
+
+.about-me__subtitle {
+    text-transform: uppercase;
+}
+
+#presentationParagraph {
+    font-size: 30px;
+    padding: 0 12%;
+    text-align: left;
+}
+
+#presentationParagraph span {
+    text-transform: uppercase;
+}
+
+.about-me h1 {
+    display: block;
+    margin-top: 3rem; /* Adjust the margin as needed */
+}
+
+.about-me__button-container {
+    display: inline-block; /* Ensures the container wraps around the button text */
+    padding: 5px; /* Adjust padding as needed */
+}
+
+.about-me__circle-button {
+    display: flex;
+    border-radius: 100%; /* Makes the button circular */
+    border: 1px solid rgba(239, 249, 252, 0.1); /* Sets the border thickness and color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: transparent; /* Ensures button background is transparent */
+    color: #ffffff; /* Sets the text color */
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: center; /* Centers the text horizontally */
+    cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+/* Footer Section */
+.horizontal-line {
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: rgba(239, 249, 252, 0.1); /* Set the color of the line */
+}
+
+footer {
+    position: static;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    background-color: #111111;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.footer__container {
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 15px;
+}
+
+.footer__list {
+    list-style-type: none;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns */
+    grid-gap: 80px 16px; /* Column gap and row gap */
+    justify-content: center; /* Center items horizontally within each column */
+    align-content: stretch; /* Center items vertically within each row */
+    padding: 0;
+    margin: 0;
+}
+
+.footer__brand {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.footer__brand a {
+    font-size: 24px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer__subtitle {
+    display: flex;
+    justify-content: right; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin : 0 40px;
+    font-size: 10px;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin : 0 40px;
+}
+
+
+.footer__link {
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff; /* White text color */
+}
+
+.footer__link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
