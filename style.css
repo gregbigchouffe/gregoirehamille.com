@@ -187,7 +187,7 @@ span {
 
 .presentation__right-content {
     position: relative;
-    background-image: url("media/myPicture1.jpg");
+    background-image: url("myPicture1.jpg");
     background-size: cover;
     background-position: center;
 }
