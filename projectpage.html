@@ -6,64 +6,61 @@
     <title>Growth Freelance</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="main-nav">
-        <ul>
-            <div class="left">
-                <li><a href="index.html">Home</a></li>
-                <hr class="separator">
-                <li><a href="projectpage.html">Projects</a></li>
-            </div>
-            <div class="brand">
-                <li><a href="index.html">Grégoire Hamille</a></li>
-            </div>
-            <div class="right">
-                <li><a href="blog.html">Blog</a></li>
-                <hr class="separator">
-                <li><a href="">Contact me</a></li>
-            </div>
-        </ul>
+    <nav class="main-nav">
+        <div class="main-nav__container">
+            <ul class="main-nav__list">
+                <div class="main-nav__left">
+                    <li class="main-nav__item"><a href="index.html" class="main-nav__link">Home</a></li>
+                    <hr class="main-nav__separator">
+                    <li class="main-nav__item"><a href="projectpage.html" class="main-nav__link">Projects</a></li>
+                </div>
+                <div class="main-nav__brand">
+                    <li class="main-nav__item"><a href="index.html" class="main-nav__link">Grégoire Hamille</a></li>
+                </div>
+                <div class="main-nav__right">
+                    <li class="main-nav__item"><a href="blog.html" class="main-nav__link">Blog</a></li>
+                    <hr class="main-nav__separator">
+                    <li class="main-nav__item" id="contactMeButton"><a href="contact.html" class="main-nav__link contact-button">Contact me</a></li>
+                </div>
+            </ul>
+        </div>
     </nav>
     
-
-    <header class = "project-header">
-        <p id="subtitle">About me</p>
-        <h1> Here is where you get to binge my projects. </h1>
-        <h1> Et le running. </h1>
-
-    </header>
-    <p>Duis elit augue, viverra suscipit luctus eget, malesuada sed turpis. Ut ullamcorper libero ante interdum.</p>
-
-
-    <section id="projectsSection">
-        <div>
-            <img src="" alt = 'Project 1'>
-            <p id="subtitle">TECH</p>
-            <p id="subtitle">March 24</p>
-            <h2> Building my website from code level 0.</h2>
+    <section class="about-me">
+        <h1 class="about-me__presentationTitle">Le contenu de cette page est en cours de création.</h1>
+        <div class="about-me__button-container">
+            <p class="about-me__circle-button">Home Page</p>
         </div>
-
-        <div>
-            <img src="" alt = '490 project'>
-            <p id="subtitle">TECH</p>
-            <p id="subtitle">July 21</p>
-            <h2> -490 project: exploring cultures through trail-running.</h2>
-        </div>
-
     </section>
-<!-- Your content goes here blabalblablalablabl-->
+
+    <hr class="horizontal-line">
+
     <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projectpage.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="">Contact me</a></li>
-        </ul>
+        <div class="footer__container">
+            <ul class="footer__list">
 
+                <div class="footer__brand">
+                    <li class="footer__item"><a href="index.html" class="footer__link">Grégoire Hamille</a></li>
+                </div>
 
+                <div class="footer__content">
+                    <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+                    <li class="footer__item"><a href="projectpage.html" class="footer__link">Projects</a></li>
+                    <li class="footer__item"><a href="blog.html" class="footer__link">Blog</a></li>
+                    <li class="footer__item"><a href="contact.html" class="footer__link">Contact me</a></li>
+                </div>
+
+                <div class="footer__subtitle">
+                    <li class="footer__item"><a href="index.html" class="footer__link">© 2024</a></li>
+                </div>
+            </ul>
+        </div>
     </footer>
 </body>
-
 </html>
